@@ -1,0 +1,26 @@
+{
+  "name": "@backstrap/math",
+  "version": "1.4.9-a.7",
+  "description": "Nontrivial mathematics in the browser",
+  "homepage": "https://paulmasson.github.io/math/docs/",
+  "author": "Paul Masson",
+  "contributors": ["Kevin Perry"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulmasson/math/issues"
+  },
+  "main": "build/math.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "sh ./build.sh",
+    "winbuild": "./build.bat",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kperry42/math.git"
+  }
+}

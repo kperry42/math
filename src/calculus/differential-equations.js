@@ -4,8 +4,9 @@ function ode( f, y, [x0,x1], step=.001, method='runge-kutta' ) {
   if ( x1 < x0 ) {
     function compare( x ) { return x >= x1; };
     step *= -1;
-  } else
+  } else {
     function compare( x ) { return x <= x1; };
+  }
 
   // vectorizing first-order real equation works because +[1] = 1
   // for complex case +[C(1)] = NaN, so explicit array references

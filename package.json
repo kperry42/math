@@ -1,6 +1,6 @@
 {
   "name": "@backstrap/math",
-  "version": "1.4.9-a.7",
+  "version": "1.4.9-a.9",
   "description": "Nontrivial mathematics in the browser",
   "homepage": "https://paulmasson.github.io/math/docs/",
   "author": "Paul Masson",
@@ -10,6 +10,18 @@
     "url": "https://github.com/paulmasson/math/issues"
   },
   "main": "build/math.js",
+  "exports": {
+    ".": "./build/math.js",
+    "./constants": "./build/constants.js"
+    "./operators": "./build/operators.js"
+    "./calculus/*": "./build/calculus/*.js"
+    "./functions/*": "./build/functions/*.js"
+    "./matrices/*": "./build/matrices/*.js"
+  },
+  "files": {
+    "build/**",
+    "docs/**"
+  },
   "directories": {
     "doc": "docs",
     "test": "test"
